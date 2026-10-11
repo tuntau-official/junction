@@ -1,0 +1,73 @@
+name: Bug report
+description: Something in Junction doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time! Tip: **Help → Report a Bug…** in the app sends us logs and a (redacted) screenshot automatically — mention its report here if you used it.
+        **Never paste passwords, connection strings with credentials, or customer data.**
+  - type: input
+    id: version
+    attributes:
+      label: Junction version
+      description: Settings → About
+      placeholder: "2026.915.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Windows 11
+        - Windows 10
+        - Linux (.deb)
+        - Linux (AppImage)
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version / distribution
+      placeholder: "macOS 15.4 · Windows 11 24H2 · Ubuntu 24.04"
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Database engine (if relevant)
+      options:
+        - Not database-specific
+        - PostgreSQL
+        - MySQL / MariaDB
+        - SQLite
+        - SQL Server
+        - MongoDB
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: And what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a blueprint on …
+        2. Wire …
+        3. See …
+    validations:
+      required: true
+  - type: textarea
+    id: sql
+    attributes:
+      label: SQL / blueprint (optional)
+      description: The query involved, with sensitive names and values removed.
+      render: sql
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, error messages, anything else
