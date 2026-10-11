@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or help
+    url: mailto:hello@tuntau.com
+    about: Not sure it's a bug? Ask us by email.
+  - name: Licensing & billing
+    url: mailto:sales@tuntau.com
+    about: Keys, invoices, refunds, team seats.
+  - name: Security vulnerability
+    url: https://github.com/tuntau-official/junction/security/advisories/new
+    about: Please report privately — never in a public issue.
+  - name: Documentation
+    url: https://github.com/tuntau-official/junction/blob/main/docs/README.md
+    about: Installation, getting started, troubleshooting.
