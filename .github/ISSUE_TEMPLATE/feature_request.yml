@@ -1,0 +1,21 @@
+name: Feature request
+description: Suggest an idea or improvement for Junction.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The problem or workflow, not the solution — "I often need to…, and today I have to…"
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: How you imagine it working in Junction.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Workarounds or other tools
+      description: How you handle it now, or how another tool does it.
